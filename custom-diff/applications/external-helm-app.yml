@@ -27,3 +27,9 @@ spec:
     kind: Secret
     jsonPointers:
     - /data
+  - kind: APIService
+    group: apiregistration.k8s.io
+    name: v1alpha1.validators.kubedb.com
+    jsonPointers:
+    - /spec/caBundle
+    - /metadata
