@@ -6,6 +6,7 @@ metadata:
   namespace: example02
   annotations:
     creation: at-{{ now | date "20160102150405" }}
+    argocd.argoproj.io/compare-options: IgnoreExtraneous
 spec:
   selector:
     matchLabels:
